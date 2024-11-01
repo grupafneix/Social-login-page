@@ -1,0 +1,27 @@
+@import "bulma/bulma.sass";
+
+.hero.is-primary {
+  background: linear-gradient(135deg, #00d1b2 0%, #009e86 100%);
+}
+
+.login-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.social-button {
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
